@@ -2,6 +2,8 @@ Anaconda Prompt as Admin
 
 cd c:\users\claud\projects\RL_Book
 
+conda create -n RLExercises python=3.11.3
+
 conda activate RLExercises
 conda install pyopengl matplotlib pandas numpy tqdm jupyterlab seaborn scikit-learn
 
