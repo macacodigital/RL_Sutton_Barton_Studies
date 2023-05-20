@@ -1,0 +1,15 @@
+Anaconda Prompt as Admin
+
+cd c:\users\claud\projects\RL_Book
+
+conda activate RLExercises
+conda install pyopengl matplotlib pandas numpy tqdm jupyterlab seaborn scikit-learn
+
+pip3 install torch torchvision torchaudio
+or
+conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
+pip install gym
+
+#To run Jupyter Lab on CondA:
+jupyter-lab
