@@ -11,6 +11,7 @@ def nstep_on_policy_return(v, done, states, rewards):
         return 0 if done else v[states[0]]
 
     sub_return = nstep_on_policy_return(v, done, states[1:], rewards[1:])
+    print(f"Return: {rewards[0] + sub_return}")
     return rewards[0] + sub_return
 
 
@@ -19,16 +20,21 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
      calculated by summing TD errors per Exercise 7.2 (tderr=True) or with (7.2) (tderr=False). """
     assert type(env.action_space) == gym.spaces.Discrete
     assert type(env.observation_space) == gym.spaces.Discrete
+    
+    debug = True
 
     # Number of available actions and states
     n_state, n_action = env.observation_space.n, env.action_space.n,
     assert policy.shape == (n_state, n_action)
 
     # Initialization of value function
-    v = np.ones([n_state], dtype=np.float) * 0.5
+    v = np.ones([n_state], dtype=float) * 0.5
 
     history = []
+    
+    
     for episode in range(num_episodes):
+        step = -1
         # Reset the environment and initialize n-step rewards and states
         state = env.reset()
         nstep_states = [state]
@@ -37,15 +43,22 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
         dv = np.zeros_like(v)
 
         done = False
+        
         while nstep_rewards or not done:
+            step += 1
+            print(f"---------------------------") if debug else 0
+            print(f"Step: {step}") if debug else 0
             if not done:
                 # Step the environment forward and check for termination
                 action = np.random.choice(n_action, p=policy[state])
+                print(f"Action: {action}") if debug else 0
                 state, reward, done, info = env.step(action)
 
                 # Accumulate n-step rewards and states
                 nstep_rewards.append(reward)
+                print(f"Rewards: {nstep_rewards}") if debug else 0
                 nstep_states.append(state)
+                print(f"States: {nstep_states}") if debug else 0
 
                 # Keep accumulating until there's enough for the first n-step update
                 if len(nstep_rewards) < n:
@@ -54,6 +67,7 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
 
             # Calculate un-discounted n-step return per (7.1)
             v_target = nstep_on_policy_return(v, done, nstep_states, nstep_rewards)
+            print(f"v_target: {v_target}") if debug else 0
 
             if tderr is True:
                 # Accumulate TD errors over the episode while v is kept constant per Exercise 7.2
@@ -61,6 +75,7 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
             else:
                 # Update value function toward the target per (7.2)
                 v[nstep_states[0]] += alpha * (v_target - v[nstep_states[0]])
+                print(f"v: {v}") if debug else 0
 
             # Remove the used n-step reward and states
             del nstep_rewards[0]
@@ -68,8 +83,10 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
 
             # Update value function with the sum of TD errors accumulated during the episode
             v += dv
+            
 
         history += [np.copy(v)]
+        print(f"history: {history}") if debug else 0
     return history
 
 
@@ -97,7 +114,7 @@ def td_off_policy_prediction(env, target, behavior, n, num_episodes, alpha=1e-3,
     assert behavior.shape == tuple(n_state + [n_action])
 
     # Initialization of value function
-    v = np.zeros(n_state, dtype=np.float)
+    v = np.zeros(n_state, dtype=float)
 
     history = []
     for episode in range(num_episodes):
