@@ -32,10 +32,13 @@ class randomwalk():
         self.arrow = None
         
         self.actions = self.base_actions[:]
-        print(f"Actions: {self.actions}")
+        #print(f"Actions: {self.actions}")
             
         self.action_space = len(self.actions)
         self.state = self.reset()
+        
+        #self.rng = np.random.default_rng(7)
+        self.seed()
 
     def reset(self):
     
@@ -51,6 +54,14 @@ class randomwalk():
         done = False
         
         reward = 0
+        
+        if action == 2:
+            action = np.random.choice([-1,1])
+        
+            if action == -1:
+                action = 1
+            else:
+                action = 0
 
         new_state = self.state + self.actions[action]
         
@@ -68,7 +79,8 @@ class randomwalk():
         return self.state, reward, done
     
     def policy(self):
-        return np.random.choice([0,1])
+        #return self.rng.choice([0,1], p=[0.5,0.5])
+        return np.random.choice([0, +1])
 
     def render(self, mode='human', reset=None):
         if self.ax is None:
@@ -102,3 +114,7 @@ class randomwalk():
                                         zorder=2, fill=True, width=0.05, head_width=0.25,
                                         length_includes_head=True)
         self.ax.add_patch(patch)
+        
+    def seed(self, seed=None):
+        seed = np.random.seed(seed)
+        return [seed]

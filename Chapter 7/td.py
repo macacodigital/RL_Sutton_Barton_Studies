@@ -15,7 +15,7 @@ def nstep_on_policy_return(v, done, states, rewards):
     return rewards[0] + sub_return
 
 
-def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False):
+def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False, debug=False):
     """ n-step TD algorithm for on-policy value prediction per Chapter 7.1. Value function updates are
      calculated by summing TD errors per Exercise 7.2 (tderr=True) or with (7.2) (tderr=False). """
     assert type(env.action_space) == gym.spaces.Discrete
@@ -23,8 +23,6 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
     
     #print(f"policy: {policy}")
     #print(f"Actions: {env.action_space.n}")
-    
-    debug = True
 
     # Number of available actions and states
     n_state, n_action = env.observation_space.n, env.action_space.n,
@@ -34,6 +32,7 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
     v = np.ones([n_state], dtype=float) * 0.5
 
     history = []
+    actions_history = []
     
     
     for episode in range(num_episodes):
@@ -46,6 +45,7 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
         state = env.reset()
         nstep_states = [state]
         nstep_rewards = []
+        actions_history.append([])
 
         dv = np.zeros_like(v)
 
@@ -65,6 +65,7 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
                 old_state = state
 
                 state, reward, done, delta, info = env.step(action)
+                actions_history[episode].append(delta)
 
                 # Accumulate n-step rewards and states
                 nstep_rewards.append(reward)
@@ -106,7 +107,7 @@ def td_on_policy_prediction(env, policy, n, num_episodes, alpha=0.5, tderr=False
         history += [np.copy(v)]
         
         #print(f"history: {history}") if debug else 0
-    return history
+    return history, actions_history
 
 
 def nstep_off_policy_per_decision_return(v, done, states, rewards, isrs):

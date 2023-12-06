@@ -1,0 +1,721 @@
+policy: [[1.]
+ [1.]
+ [1.]
+ [1.]
+ [1.]]
+Actions: 1
+---------------------------
+Episode 0
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 13 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 14 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 15 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 16 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.5  0.5  0.5  0.55 0.5 ]
+Step: 17 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.5  0.5  0.55 0.55 0.5 ]
+Step: 18 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.5   0.5   0.55  0.595 0.5  ]
+Step: 19 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+---------------------------
+Episode 1
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 4 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5   0.5   0.55  0.595 0.55 ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.5    0.5    0.55   0.5855 0.55  ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5    0.5    0.55   0.5855 0.55  ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.5     0.5     0.55    0.57695 0.55   ]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5     0.5     0.545   0.57695 0.55   ]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5     0.45    0.545   0.57695 0.55   ]
+Step: 11 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5     0.45    0.4905  0.57695 0.55   ]
+Step: 12 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5     0.405   0.4905  0.57695 0.55   ]
+Step: 13 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45    0.405   0.4905  0.57695 0.55   ]
+---------------------------
+Episode 2
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.45    0.405   0.4905  0.57695 0.55   ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.45    0.405   0.4905  0.57695 0.55   ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.45    0.405   0.4905  0.57695 0.55   ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.45    0.405   0.4905  0.57695 0.55   ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.45     0.405    0.4905   0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45     0.405    0.48645  0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.45     0.405    0.48645  0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45     0.405    0.482805 0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45     0.3645   0.482805 0.559755 0.55    ]
+Step: 9 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.405    0.3645   0.482805 0.559755 0.55    ]
+Step: 10 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.405    0.32805  0.482805 0.559755 0.55    ]
+Step: 11 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.3645   0.32805  0.482805 0.559755 0.55    ]
+---------------------------
+Episode 3
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.3645   0.32805  0.482805 0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.3645   0.32805  0.482805 0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.3645   0.32805  0.482805 0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.3645   0.32805  0.482805 0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.3645   0.32805  0.482805 0.559755 0.55    ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.3645    0.32805   0.4709745 0.559755  0.55     ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.3645    0.32805   0.4709745 0.5365845 0.55     ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.3645     0.32805    0.46032705 0.5365845  0.55      ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.3645     0.32805    0.46032705 0.5365845  0.55      ]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.37408271 0.32805    0.46032705 0.5365845  0.55      ]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.37408271 0.34890345 0.46032705 0.5365845  0.55      ]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.39167443 0.34890345 0.46032705 0.5365845  0.55      ]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.39167443 0.41401311 0.46032705 0.5365845  0.55      ]
+Step: 13 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.39167443 0.41401311 0.51429435 0.5365845  0.55      ]
+Step: 14 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.55      ]
+Step: 15 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+---------------------------
+Episode 4
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.58292605 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 13 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.41401311 0.51429435 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 14 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39167443 0.42921527 0.51429435 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 15 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.39167443 0.42921527 0.52236491 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 16 | State: 4 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52236491 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 17 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52962842 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 18 | State: 4 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52962842 0.56603476 0.595     ]
+policy: [1.]
+Actions: 1
+Step: 19 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52962842 0.56603476 0.58846284]
+policy: [1.]
+Actions: 1
+Step: 20 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52962842 0.553721   0.58846284]
+policy: [1.]
+Actions: 1
+Step: 21 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52962842 0.553721   0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 22 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.39167443 0.44289722 0.52962842 0.4983489  0.568784  ]
+Step: 23 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.39167443 0.44289722 0.47666558 0.4983489  0.568784  ]
+Step: 24 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.39167443 0.3986075  0.47666558 0.4983489  0.568784  ]
+Step: 25 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.35250699 0.3986075  0.47666558 0.4983489  0.568784  ]
+---------------------------
+Episode 5
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.47666558 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.35250699 0.3986075  0.47666558 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.47666558 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.35250699 0.3986075  0.47666558 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.47666558 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.35250699 0.3986075  0.48587742 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 4 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.48587742 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.35250699 0.3986075  0.48587742 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.48587742 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.35250699 0.3986075  0.48587742 0.4983489  0.568784  ]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.48587742 0.54851401 0.568784  ]
+Step: 11 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.53728968 0.54851401 0.568784  ]
+Step: 12 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.53728968 0.59366261 0.568784  ]
+Step: 13 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.53728968 0.59366261 0.6119056 ]
+---------------------------
+Episode 6
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.53728968 0.59366261 0.6119056 ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.35250699 0.3986075  0.53728968 0.59366261 0.6119056 ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.53728968 0.59366261 0.6119056 ]
+Step: 3 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.58356071 0.59366261 0.6119056 ]
+Step: 4 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.6119056 ]
+Step: 5 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.65071504]
+---------------------------
+Episode 7
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.65071504]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.65071504]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.65071504]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.65071504]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.35250699 0.3986075  0.58356071 0.63429635 0.65071504]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.35250699 0.3986075  0.59027614 0.63429635 0.65071504]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.45874675 0.59027614 0.63429635 0.65071504]
+Step: 7 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.45874675 0.63124853 0.63429635 0.65071504]
+Step: 8 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.45874675 0.63124853 0.67086671 0.65071504]
+Step: 9 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.35250699 0.45874675 0.63124853 0.67086671 0.68564354]
+---------------------------
+Episode 8
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.35250699 0.45874675 0.63124853 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.35250699 0.45874675 0.63124853 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.35250699 0.45874675 0.63124853 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.35250699 0.45874675 0.60337438 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.35250699 0.41287207 0.60337438 0.67086671 0.68564354]
+Step: 5 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.35250699 0.41287207 0.54303694 0.67086671 0.68564354]
+Step: 6 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.35250699 0.37158487 0.54303694 0.67086671 0.68564354]
+Step: 7 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.31725629 0.37158487 0.54303694 0.67086671 0.68564354]
+---------------------------
+Episode 9
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.31725629 0.37158487 0.54303694 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.31725629 0.37158487 0.54303694 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.31725629 0.37158487 0.54303694 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.31725629 0.37158487 0.52045887 0.67086671 0.68564354]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.31725629 0.33442638 0.52045887 0.67086671 0.68564354]
+Step: 5 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.28553066 0.33442638 0.52045887 0.67086671 0.68564354]
+Step: 6 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.28553066 0.30098374 0.52045887 0.67086671 0.68564354]
+Step: 7 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.2569776  0.30098374 0.52045887 0.67086671 0.68564354]
+policy: [[1.]
+ [1.]
+ [1.]
+ [1.]
+ [1.]]
+Actions: 1
+---------------------------
+Episode 0
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5 0.5 0.5 0.5 0.5]
+Step: 3 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5  0.5  0.45 0.5  0.5 ]
+Step: 4 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.5  0.45 0.4  0.5  0.5 ]
+Step: 5 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45 0.4  0.35 0.5  0.5 ]
+---------------------------
+Episode 1
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.45 0.4  0.35 0.5  0.5 ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.45 0.4  0.35 0.5  0.5 ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.45 0.4  0.35 0.5  0.5 ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45 0.4  0.36 0.5  0.5 ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45 0.4  0.37 0.45 0.5 ]
+Step: 5 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45  0.4   0.343 0.4   0.5  ]
+Step: 6 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.45  0.36  0.316 0.35  0.5  ]
+Step: 7 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.405 0.32  0.289 0.3   0.5  ]
+---------------------------
+Episode 2
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.405 0.32  0.289 0.3   0.5  ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.405 0.32  0.289 0.3   0.5  ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.405 0.32  0.289 0.3   0.5  ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.405  0.32   0.3101 0.3    0.5   ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.405  0.32   0.3312 0.37   0.5   ]
+Step: 5 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.405   0.32    0.41918 0.44    0.5    ]
+Step: 6 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.405   0.32    0.50716 0.566   0.5    ]
+Step: 7 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.405   0.32    0.59514 0.692   0.55   ]
+---------------------------
+Episode 3
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.405   0.32    0.59514 0.692   0.55   ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.405   0.32    0.59514 0.692   0.55   ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.405   0.32    0.59514 0.692   0.55   ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.405   0.32    0.59514 0.692   0.55   ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.405   0.32    0.59514 0.692   0.55   ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.405    0.32     0.576126 0.692    0.55    ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.405    0.32     0.557112 0.6548   0.55    ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.405    0.32     0.538098 0.6176   0.55    ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.405    0.32     0.519084 0.5804   0.55    ]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.4164084 0.32      0.50007   0.5432    0.55     ]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.4278168 0.32      0.481056  0.506     0.55     ]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.4392252  0.32       0.45671808 0.4688     0.55      ]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.4506336  0.288      0.43238016 0.4316     0.55      ]
+Step: 13 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.462042   0.256      0.36480422 0.3944     0.55      ]
+Step: 14 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.4734504  0.1984     0.29722829 0.3572     0.55      ]
+Step: 15 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+---------------------------
+Episode 4
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.1408     0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.15872    0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.17664    0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.19456    0.22965235 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.43751376 0.21248    0.26168712 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 4 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.2304     0.29372188 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.43751376 0.24832    0.35138446 0.32       0.55      ]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.26624    0.40904703 0.388      0.55      ]
+Step: 13 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.28416    0.46670961 0.456      0.595     ]
+Step: 14 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.30208    0.52437219 0.5784     0.64      ]
+Step: 15 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.32       0.58203476 0.7008     0.721     ]
+---------------------------
+Episode 5
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.43751376 0.32       0.58203476 0.7008     0.721     ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.32       0.58203476 0.7008     0.721     ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.32       0.58203476 0.7008     0.721     ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.43751376 0.32       0.59593129 0.7008     0.721     ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.388      0.60982781 0.7008     0.721     ]
+Step: 5 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.456      0.66274155 0.7008     0.721     ]
+Step: 6 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.524      0.7156553  0.73072    0.721     ]
+Step: 7 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.592      0.76856904 0.76064    0.7489    ]
+---------------------------
+Episode 6
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.592      0.76856904 0.76064    0.7489    ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.43751376 0.592      0.76856904 0.76064    0.7489    ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.592      0.76856904 0.76064    0.7489    ]
+Step: 3 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.592      0.79171213 0.76064    0.7489    ]
+Step: 4 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.592      0.81485523 0.784576   0.7489    ]
+Step: 5 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.43751376 0.592      0.83799833 0.808512   0.77401   ]
+---------------------------
+Episode 7
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.592      0.83799833 0.808512   0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.592      0.83799833 0.808512   0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.43751376 0.592      0.83799833 0.808512   0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.43751376 0.592      0.83799833 0.808512   0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.43751376 0.592      0.83799833 0.7868608  0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.43751376 0.592      0.79794987 0.7652096  0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.43751376 0.592      0.75790141 0.66703744 0.77401   ]
+Step: 7 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.43751376 0.592      0.64206282 0.56886528 0.77401   ]
+Step: 8 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.43751376 0.5328     0.52622422 0.47069312 0.77401   ]
+Step: 9 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.37252096 0.77401   ]
+---------------------------
+Episode 8
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.37252096 0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.37252096 0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 4 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.37252096 0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.37252096 0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.38262886 0.77401   ]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.39273677 0.73598524]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.410931   0.69796048]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.42912522 0.65993572]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39376238 0.4736     0.41038562 0.44731945 0.62191095]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39542471 0.4736     0.41038562 0.46551368 0.58388619]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.39708703 0.4736     0.41038562 0.4837079  0.54586143]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.39874935 0.4736     0.41038562 0.50190213 0.50783667]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.40041168 0.47643021 0.41038562 0.52009636 0.46981191]
+policy: [1.]
+Actions: 1
+Step: 13 | State: 3 | Action: 0 | Next State: 4 | Reward: 0 | State Values: [0.402074   0.47926043 0.41632825 0.53829059 0.43178715]
+policy: [1.]
+Actions: 1
+Step: 14 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.40373633 0.5341646  0.42227088 0.55648481 0.39376238]
+Step: 15 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.40539865 0.58906877 0.48598642 0.57467904 0.35573762]
+Step: 16 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.40706097 0.64397294 0.54970196 0.63540536 0.31771286]
+Step: 17 | State: 4 | Action: 0 | Next State: 4 | Reward: 1 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+---------------------------
+Episode 9
+policy: [1.]
+Actions: 1
+Step: 0 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 1 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 2 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 3 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 4 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 5 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 6 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 7 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.4087233  0.69887711 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 8 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.4087233  0.69860257 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 9 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.42919272 0.69832802 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 10 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.44966214 0.69805348 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 11 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.47013156 0.69777894 0.6134175  0.69613169 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 12 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.49060098 0.6975044  0.6134175  0.69629641 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 13 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.5110704  0.69722986 0.6134175  0.69646114 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 14 | State: 2 | Action: 0 | Next State: 3 | Reward: 0 | State Values: [0.53153982 0.69687844 0.6134175  0.69662586 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 15 | State: 3 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.55200924 0.69652703 0.6134175  0.69679059 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 16 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.57247866 0.69617561 0.6134175  0.69695531 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 17 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.59294808 0.6958242  0.6134175  0.69712004 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 18 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.6134175  0.69547279 0.6134175  0.69715518 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 19 | State: 1 | Action: 0 | Next State: 2 | Reward: 0 | State Values: [0.63388692 0.69512137 0.6134175  0.69719032 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 20 | State: 2 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.65435634 0.69476996 0.6134175  0.69722546 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 21 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.67482576 0.69441854 0.61751138 0.6972606  0.34791681]
+policy: [1.]
+Actions: 1
+Step: 22 | State: 0 | Action: 0 | Next State: 1 | Reward: 0 | State Values: [0.69529518 0.69406713 0.62160527 0.69729575 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 23 | State: 1 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.7157646  0.69371572 0.63306814 0.69733089 0.34791681]
+policy: [1.]
+Actions: 1
+Step: 24 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.73623402 0.62399273 0.64453102 0.69736603 0.34791681]
+Step: 25 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.68308004 0.55426974 0.65599389 0.69740117 0.34791681]
+Step: 26 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.62992606 0.42911978 0.66745677 0.69743631 0.34791681]
+Step: 27 | State: 0 | Action: 0 | Next State: 0 | Reward: 0 | State Values: [0.51377947 0.30396982 0.67891965 0.69747145 0.34791681]
+C:\Users\cafaya\.conda\envs\RLExercises\Lib\site-packages\gym\utils\passive_env_checker.py:174: UserWarning: WARN: Future gym versions will require that `Env.reset` can be passed a `seed` instead of using `Env.seed` for resetting the environment random number generator.
+  logger.warn(
+C:\Users\cafaya\.conda\envs\RLExercises\Lib\site-packages\gym\utils\passive_env_checker.py:187: UserWarning: WARN: Future gym versions will require that `Env.reset` can be passed `options` to allow the environment initialisation to be passed additional information.
+  logger.warn(
+C:\Users\cafaya\.conda\envs\RLExercises\Lib\site-packages\gym\utils\passive_env_checker.py:195: UserWarning: WARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'int'>`
+  logger.warn(
+C:\Users\cafaya\.conda\envs\RLExercises\Lib\site-packages\gym\utils\passive_env_checker.py:219: DeprecationWarning: WARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. 
+  logger.deprecation(
+C:\Users\cafaya\.conda\envs\RLExercises\Lib\site-packages\gym\utils\passive_env_checker.py:225: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(done, (bool, np.bool8)):
+C:\Users\cafaya\.conda\envs\RLExercises\Lib\site-packages\gym\utils\passive_env_checker.py:133: UserWarning: WARN: The obs returned by the `step()` method should be an int or np.int64, actual type: <class 'numpy.int32'>
+  logger.warn(f"{pre} should be an int or np.int64, actual type: {type(obs)}")
+v_star = np.arange(1, size + 1) / (size + 1)
+v_star
+array([0.16666667, 0.33333333, 0.5       , 0.66666667, 0.8

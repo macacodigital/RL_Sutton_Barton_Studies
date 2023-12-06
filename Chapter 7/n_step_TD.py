@@ -14,6 +14,8 @@ def initialize_state_values(shape):
     
     #shape is tuple
     state_values = np.ones(shape, dtype=float) * 0.5
+    state_values[0][0] = 0
+    state_values[0][-1] = 0
     
     return state_values
 
@@ -55,21 +57,27 @@ def run_episode(env, epsilon=0.2, render=True):
         
     return transitions
 
-def n_step_td_estimating(env, state_values, episodes, n=2, alpha=0.5, gamma=1, epsilon=0.1, render=False, debug=False):
+def n_step_td_estimating(env, state_values, episodes, n=2, alpha=0.5, gamma=1, epsilon=0.1, render=False, actions=None, debug=False):
     
     steps = 0
     total_steps = 0
     previous_episode = 0
     history = []
+    
+    if actions:
+        episodes = len(actions)
         
     if render and (episodes > 10):
         render = False
         print(f"Too many episodes to render!")
         
     if debug:
-        episodes = 10
+        episodes = min(episodes,10)
     
     for episode in range(1, episodes + 1):
+        
+        print(f"---------------------------") if debug else 0
+        print(f"Episode {episode}") if debug else 0
         
         transitions = []
         rewards = []
@@ -87,36 +95,39 @@ def n_step_td_estimating(env, state_values, episodes, n=2, alpha=0.5, gamma=1, e
         
         while (time != (T - 1)):
             
-            
-            print(f"---------------------------") if debug else 0
-            print(f"Step: {step}") if debug else 0
-            print(f"T: {T}") if debug else 0
+            # print(f"Step: {step}") if debug else 0
+            # print(f"T: {T}") if debug else 0
             
             G = 0
             
             if step < T:
-                action = env.policy()
-                print(f"Action: {action}") if debug else 0
+                if actions:
+                    action = actions[episode - 1][step]
+                else:
+                    action = 2
+                #print(f"Action: {action}") if debug else 0
                 next_state, reward, done = env.step(action)
                 transitions.append(next_state)
-                print(f"Transitions: {transitions}") if debug else 0
+                # print(f"Transitions: {transitions}") if debug else 0
                 rewards.append(reward)
-                print(f"Rewards: {rewards}") if debug else 0
+                # print(f"Rewards: {rewards}") if debug else 0
                 if done:
                     T = step + 1
             time = step - n + 1
-            print(f"time: {time}") if debug else 0
+            # print(f"time: {time}") if debug else 0
                 
             if (time >= 0):
                 for i in range(time + 1, min(time + n, T) + 1):
-                    G += gamma ** (i - time  - 1) * rewards[i]
-                    print(f"G: {G} : gamma: {gamma} | exp: {i - time  - 1} | gamma**exp: {gamma**(i - time  - 1)} | Reward: {rewards[i]}") if debug else 0
+                    G += (gamma ** (i - time  - 1)) * rewards[i]
+                    # print(f"G: {G} : gamma: {gamma} | exp: {i - time  - 1} | gamma**exp: {gamma**(i - time  - 1)} | Reward: {rewards[i]}") if debug else 0
                 if ((time + n) < T):
                     G += (gamma ** n) * state_values[tuple(transitions[time + n])]
-                    print(f"G Final: {G}") if debug else 0
+                    # print(f"G Final: {G}") if debug else 0
                 state_values[tuple(transitions[time])] += alpha * (G - state_values[tuple(transitions[time])])
-                print(f"G: {G} | State Value {transitions[time]}: {state_values[tuple(transitions[time])]}") if debug else 0
-
+                # print(f"G: {G} | State Value {transitions[time]}: {state_values[tuple(transitions[time])]}") if debug else 0
+            
+            print(f"Step: {step} | State: {state[1]} | Action: {action} | Next State: {next_state[1]} | Reward: {reward} | State Values: {state_values[0][1:-1]} | Step: {step} | T: {T} | time: {time}") if debug else 0
+            
             state = next_state.copy()
             step += 1
                                                                
@@ -126,11 +137,12 @@ def n_step_td_estimating(env, state_values, episodes, n=2, alpha=0.5, gamma=1, e
             step = 0
             previous_episode = episode
             
-        print(f"State_Values: {state_values}") if debug else 0
-        print(f"State_Values: {state_values[0][1:-1]}") if debug else 0
+        #print(f"State_Values: {state_values}") if debug else 0
+        #print(f"State_Values: {state_values[0][1:-1]}") if debug else 0
         history.append(state_values[0][1:-1].copy())
-        print(f"History: {history}") if debug else 0
+        #print(f"History: {history}") if debug else 0
             
+    print(f"alpha: {alpha}")
     print(f"Total number of episodes: {episodes}")
     print(f"Total number of steps: {total_steps}")
     print(f"Total Average of Steps Per Episode: {total_steps/episodes}")
