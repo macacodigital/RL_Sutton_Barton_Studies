@@ -12,10 +12,10 @@ def dyna_q(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95):
     n_state, n_action = env.observation_space.n, env.action_space.n
 
     # Initialization of action value function
-    q = np.zeros([n_state, n_action], dtype=np.float)
+    q = np.zeros([n_state, n_action], dtype=float)
 
     # Initialize policy to equal-probable random
-    policy = np.ones([n_state, n_action], dtype=np.float) / n_action
+    policy = np.ones([n_state, n_action], dtype=float) / n_action
     assert np.allclose(np.sum(policy, axis=1), 1)
 
     # Model of a deterministic environment
@@ -63,8 +63,8 @@ def dyna_q_plus(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95, kappa=1e-4
     n_state, n_action = env.observation_space.n, env.action_space.n
 
     # Initialization of action value function and visit counter
-    q = np.zeros([n_state, n_action], dtype=np.float)
-    tau = np.zeros([n_state, n_action], dtype=np.int)
+    q = np.zeros([n_state, n_action], dtype=float)
+    tau = np.zeros([n_state, n_action], dtype=int)
 
     # Initialize policy to equal-probable random
     policy = np.ones([n_state, n_action], dtype=np.float) / n_action
