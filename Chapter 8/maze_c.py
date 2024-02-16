@@ -27,6 +27,9 @@ class maze_c():
     rewards = [-1]
 
     def __init__(self):
+
+        self.rng = None
+        
         self.ax = None
         self.arrow = None
         
@@ -40,9 +43,6 @@ class maze_c():
 
         self.timestep = 0
         #self.position = None
-        
-        #self.rng = np.random.default_rng(7)
-        self.seed()
 
     def reset(self):
     
@@ -140,5 +140,4 @@ class maze_c():
         self.ax.add_patch(patch)
         
     def seed(self, seed=None):
-        seed = np.random.seed(seed)
-        return [seed]
+        self.rng = np.random.default_rng(12345)

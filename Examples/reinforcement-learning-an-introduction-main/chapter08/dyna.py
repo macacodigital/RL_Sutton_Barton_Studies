@@ -64,7 +64,7 @@ def dyna_q_plus(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95, kappa=1e-4
 
     # Initialization of action value function and visit counter
     q = np.zeros([n_state, n_action], dtype=float)
-    tau = np.zeros([n_state, n_action], dtype=int)
+    tau = np.zeros([n_state, n_action], dtype=np.int)
 
     # Initialize policy to equal-probable random
     policy = np.ones([n_state, n_action], dtype=np.float) / n_action

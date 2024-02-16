@@ -22,7 +22,7 @@ def dyna_q(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95):
     if debug:
         print(f"policy: {policy}")
     
-    assert np.allclose(np.sum(policy[0], axis=1), 1)
+    assert np.allclose(np.sum(policy, axis=2), 1)
 
     # Model of a deterministic environment
     model = {}
@@ -36,7 +36,7 @@ def dyna_q(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95):
         done = False
         while not done:
             # Sample action according to the current policy and step the environment forward
-            action = np.random.choice(n_action, p=policy[state[0]][state[1]])
+            action = env.rng.choice(n_action, p=policy[state[0]][state[1]])
             next, reward, done, info = env.step(action)
             history += [reward]
 
@@ -52,7 +52,7 @@ def dyna_q(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95):
                 print(f"Transitions: {transitions}")
             for i in range(n):
                 p_next = [0,0]
-                p_state[0], p_state[1], p_action = transitions[np.random.choice(len(transitions))]
+                p_state[0], p_state[1], p_action = transitions[env.rng.choice(len(transitions))]
                 p_next[0], p_next[1], p_reward = model[p_state[0], p_state[1], p_action]
                 q[p_state[0], p_state[1], p_action] += alpha * (p_reward + gamma * np.max(q[p_next[0], p_next[1]]) - q[p_state[0], p_state[1], p_action])
 
@@ -62,7 +62,7 @@ def dyna_q(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95):
             # Extract eps-greedy policy from the updated q values
             policy[state[0], state[1], :] = eps / n_action
             policy[state[0], state[1], np.argmax(q[state[0], state[1]])] = 1 - eps + eps / n_action
-            #assert np.allclose(np.sum(policy, axis=1), 1)
+            assert np.allclose(np.sum(policy, axis=2), 1)
             if debug:
                 print(f"policy: {policy}")
 
@@ -90,7 +90,7 @@ def dyna_q_plus(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95, kappa=1e-4
     # Initialize policy to equal-probable random
     policy = np.ones([n_state[0], n_state[1], n_action], dtype=float) / n_action
     #print(f"policy: {policy}")
-    assert np.allclose(np.sum(policy[0], axis=1), 1)
+    assert np.allclose(np.sum(policy, axis=2), 1)
 
     # Model of a deterministic environment
     model = {}
@@ -98,46 +98,48 @@ def dyna_q_plus(env, n, num_episodes, eps=0.1, alpha=0.5, gamma=0.95, kappa=1e-4
     for episode in range(num_episodes):
         state = env.reset()
         
-
         done = False
-        while not done:
+        while not done:            
             # Sample action according to the current policy and step the environment forward
-            action = np.random.choice(n_action, p=policy[state[0],state[1]])
+            action = env.rng.choice(n_action, p=policy[state[0],state[1]])
             next, reward, done, info = env.step(action)
             history += [reward]
 
             # Update q value with a q-learning update and reset visit counter
             q[state[0], state[1], action] += alpha * (reward + gamma * np.max(q[next[0], next[1]]) - q[state[0], state[1], action])
-            model[state[0], state[1], action] = next[0], next[1], reward
+
+            #set model with option for empty actions
+            model.setdefault(tuple(state), {})[action] = next[0], next[1], reward
+            
+            # increase visit counter for all states
+            tau += 1
+            # set tau of the State,Action pair visited to zero
             tau[state[0], state[1], action] = 0
 
             # Planning that allows taking unvisited actions from visited states
-            #print(f"Model: {model}")
             states = list(model.keys())
-            #print(f"States: {states}")
+
             for i in range(n):
                 p_next =[0,0]
-                p_state = states[np.random.choice(len(states))]
-                #print(f"p_state: {p_state}")
-                #print(f"tuple(p_state): {tuple(p_state)}")
-                p_action = p_state[2]
-                #print(f"p_action: {p_action}")
-                #print(f"model[p_state[0], p_state[1], p_action]: {model[p_state[0], p_state[1], p_action]}")
-                #print(f"model.get(tuple(p_state), (p_state[0], p_state[1], 0)): {model.get(tuple(p_state), (p_state[0], p_state[1], 0))}")
-                p_next[0], p_next[1], p_reward = model.get(tuple(p_state), (p_state[0], p_state[1], 0))
+                p_state = states[env.rng.choice(len(states))]
+
+                #select random actions, even if they have not been selected before
+                p_action = env.rng.choice(n_action)
+
+                #get data from model or revert to previous state in case action was not taken before
+                p_next[0], p_next[1], p_reward = model[tuple(p_state)].get(p_action, (p_state[0], p_state[1], 0))
+                
                 bonus = 0 if action_only else kappa * np.sqrt(tau[p_state[0], p_state[1], p_action])
                 q[p_state[0], p_state[1], p_action] += alpha * (p_reward + bonus + gamma * np.max(q[p_next[0], p_next[1]]) - q[p_state[0], p_state[1], p_action])
-
+            
             # Extract eps-greedy policy from the updated q values and exploration bonus
             bonus = kappa * np.sqrt(tau[state[0], state[1]]) if action_only else 0
             policy[state[0], state[1], :] = eps / n_action
-            #print(f"policy[state[0], state[1], :]: {policy[state[0], state[1], :]}")
             policy[state[0], state[1], np.argmax(q[state[0], state[1]] + bonus)] = 1 - eps + eps / n_action
-            #print(f"policy[state[0], state[1], np.argmax(q[state[0], state[1]] + bonus)]: {policy[state[0], state[1], np.argmax(q[state[0], state[1]] + bonus)]}")
-            assert np.allclose(np.sum(policy[0], axis=1), 1)
+            
+            assert np.allclose(np.sum(policy, axis=2), 1)
 
-            # Prepare the next q update and increase visit counter for all states
+            # Prepare the next q update
             state = next
-            tau += 1
 
     return q, policy, history
